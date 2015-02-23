@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot');
@@ -98,12 +99,12 @@ header #avatar img {
 }
 header #logo img {
 	border-right: 1px solid white;
-	margin-right: 0.5em;
+	margin: 0 0.5em;
 	padding-right: 0.5em;
 	width: 52px;
 }
 nav {
-	background: #80BCA3;
+	background: #22BCE0;
 	padding: 0 7em 0 0.5em;
 	position: relative;
 }
@@ -119,7 +120,7 @@ nav ul #publicar_nav {
 	right: 0;
 }
 nav ul #publicar_nav a {
-	background: #22BCE0;
+	background: #E4885C;
 	border-radius: 5px;
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 15px;
 	font-style: italic;
@@ -130,12 +131,16 @@ nav ul #publicar_nav a {
 nav ul li {
 	display: inline-block;
 	margin: 0 0.8em 0 0;
-
 }
 nav ul li a {
 	color: white;
 	display: block;
-	padding: 0.5em 0;
+	padding: 0.5em;
+	text-decoration: none;
+	transition:.2s;
+}
+nav ul li a:hover {
+	background: #0938AD;
 }
 #contenido {
 	margin: 1em;
@@ -144,16 +149,16 @@ nav ul li a {
 	background: white;
 	border-bottom: 3px solid #22BCE0;
 	margin-bottom: 2.5em;
-	min-height: 128px;
+	height: 128px;
 	position: relative;
 }
 #contenido .item .autor_item {
 	color: #AAA;
+	font-size: 0.9em;
 }
 #contenido .item .datos_item {
-	margin: 0.5em 1em 0.5em 0;
+	margin: 0.5em 1em 0 0;
 	text-align: right;
-	vertical-align: bottom;
 }
 #contenido .item .datos_item .tag_item {
 	background: #F4502A;
@@ -161,6 +166,7 @@ nav ul li a {
 	color: white;
 	display: inline-block;
 	float: left;
+	font-size: 0.9em;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
@@ -175,7 +181,7 @@ nav ul li a {
 	font-size: 1.2em;
 	font-style: italic;
 	margin-bottom: 0;
-	padding: 0.5em 0.5em 0 0;
+	padding: 0 0.5em 0 0;
 }
 #contenido .item .titulo_item a {
 	color: #444;
@@ -189,7 +195,7 @@ nav ul li a {
 	padding: 0.2em 0.5em;
 	position: absolute;
 	top: 100%;
-	width: 90%;
+	width: 91%;
 }
 #contenido .item .votacion a{
 	text-decoration: none;
@@ -197,6 +203,28 @@ nav ul li a {
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item {
 	float: right;
+}
+
+/* Formulario */
+.formulario {
+	padding: 1em;
+	text-align: right;
+	display: none;
+}
+.formulario input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 0.3em 0;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="submit"] {
+	background: #E4885C;
+	border-color: #E4885C;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 15px;
+	color: white;
+	font-style: italic;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 8px;
 }
 @media screen and (min-width: 800px) {
 	#contenido {
@@ -208,5 +236,16 @@ nav ul li a {
 	}
 	#contenido .item:nth-child(odd) {
 		margin-right: 1em;
+	}
+}
+@media screen and (min-width: 1000px) {
+	aside {
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 25%;
+	}
+	aside video {
+		width: 100%
 	}
 }

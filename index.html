@@ -5,9 +5,9 @@
 	<meta name="description" content="Proyecto de la primera generación del 2014 del curso de Diseño Web Online">
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<title>Puls2014: Comunidad de personas atractivas e inteligentes</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="style.css" />
+	<!-- // <script src="prefixfree.js"></script> -->
 
 </head>
 <body>
@@ -30,11 +30,23 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-pen">Publicar</a>
+				<a href="#" class="icon-pen" id="mostrar-form">Publicar</a>
 			</li>
 
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="Título" required>
+		<input type="url" id="url" placeholder="Link" required>
+		<input type="submit" value="Agregar">
+	</form>
+	<aside>
+		<div id="geo"></div>
+		<video width="320" height="240" controls autoplay>
+			<source src="lecturas.m4v" type="video/m4v">
+			<source src="lecturas.ogg" type="video/ogg">
+		</video>	
+	</aside>
 	<section id="contenido">
 		<article class="item">
 		<figure class="imagen_item">
@@ -185,5 +197,15 @@
 			mejorando.la 2014
 		</p>
 	</footer>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="formulario.js"></script>
+	<script src="geo.js"></script>
+	<script src="ajax.js"></script>
+	<script>
+		$(function(){});
+	</script>
+
+	<script>
+	</script>
 </body>
 </html>
